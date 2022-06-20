@@ -50,9 +50,11 @@ h2:hover {
 }
 
 .cardDiv  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .background {
@@ -60,4 +62,26 @@ h2:hover {
     background-image: url(img/background.png);
     width: 100%;
     height: 100vh;
+}
+
+.quizCard {
+    width: 30rem;
+}
+
+.card-button {
+    cursor: pointer;
+}
+
+.card-button:hover {
+    cursor: pointer;
+    background-color: lightblue;
+
+}
+
+.question-footer {
+    border-top: 1px solid rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
 }
