@@ -1,5 +1,4 @@
-let questions = [
-
+let questionsHTML = [
     { //HTML
 
         "question": "Wer hat HTML erfunden?",
@@ -32,10 +31,12 @@ let questions = [
         "answer_3": "HTML ist eine Programmiersprache",
         "answer_4": "HTML ist für Webseiten",
         "right_answer": 3
-    },
+    }
+];
 
-    //########################################
+//#####################################################################################################
 
+let questionsCSS = [
     {//CSS
 
         "question": "Was ist CSS?",
@@ -68,11 +69,12 @@ let questions = [
         "answer_3": "Angaben, die verschiedene Inhalte der Website miteinander verbinden",
         "answer_4": "Struktur der Website",
         "right_answer": 2
-    },
+    }
+];
 
-    //########################################
+//#####################################################################################################
 
-
+let questionsJS = [
     {//JS
 
         "question": "Wie heißt der Erfinder von JavaScript?",
@@ -105,10 +107,12 @@ let questions = [
         "answer_3": "String",
         "answer_4": "For-Schleife",
         "right_answer": 4
-    },
+    }
+];
 
-    //########################################
+//#####################################################################################################
 
+let questionsGalaxy = [
     {//Galaxy
 
         "question": "Wie lange dauert es, bis man eine veränderung der Sonne, auf der Erde sieht?",
@@ -117,7 +121,7 @@ let questions = [
         "answer_3": "Sofort",
         "answer_4": "20 Minuten",
         "right_answer": 2
-},
+    },
     {
         "question": "Wie viele Planeten hat unsere Sonnensystem?",
         "answer_1": "6",
@@ -125,7 +129,7 @@ let questions = [
         "answer_3": "10",
         "answer_4": "12",
         "right_answer": 2
-},
+    },
     {
         "question": "Wie groß ist die Erde?",
         "answer_1": "5.349 km",
@@ -133,7 +137,7 @@ let questions = [
         "answer_3": "6.334 km",
         "answer_4": "6.371 km",
         "right_answer": 4
-},
+    },
     {
         "question": "An welcher stelle steht unsere Erde im Sonnensystem?",
         "answer_1": "3",
@@ -141,10 +145,12 @@ let questions = [
         "answer_3": "5",
         "answer_4": "6",
         "right_answer": 1
-},
+    }
+];
 
-    //########################################
+//#####################################################################################################
 
+let questionsTierwelt = [
     {//Tierwelt
 
         "question": "Was ist das größte Tier der welt?",
@@ -153,7 +159,7 @@ let questions = [
         "answer_3": "Weißer Hai",
         "answer_4": "Orkar",
         "right_answer": 2
-},
+    },
     {
         "question": "Wie schwer kann ein Blauwal werden?",
         "answer_1": "Bis zu 1.000 Kilogramm",
@@ -161,7 +167,7 @@ let questions = [
         "answer_3": "Bis zu 95.000 Kilogramm",
         "answer_4": "Bis zu 200.000 Kilogramm",
         "right_answer": 4
-},
+    },
     {
         "question": "Welches Tier nennen wir auch = den besten Freund des Menschen?",
         "answer_1": "Löwe",
@@ -169,7 +175,7 @@ let questions = [
         "answer_3": "Hund",
         "answer_4": "Delfin",
         "right_answer": 3
-},
+    },
     {
         "question": "Zu welcher Familie gehört der Fuchs?",
         "answer_1": "Zur Familie der Katzen",
@@ -177,10 +183,12 @@ let questions = [
         "answer_3": "Zur Familie der Bären",
         "answer_4": "Zur Familie der Mäuse",
         "right_answer": 2
-},
+    }
+];
 
-    //########################################
+//#####################################################################################################
 
+let questionsTechnik = [
     {//Technik
 
         "question": "Welche Reihenfolge ist richtig",
@@ -213,7 +221,5 @@ let questions = [
         "answer_3": "Ein Siegel für 'Silent' -PCs",
         "answer_4": "Eine Router-Einstellung",
         "right_answer": 2
-    },
-
-    //########################################
+    }
 ];

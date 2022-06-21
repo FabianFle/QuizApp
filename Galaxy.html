@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizApp - HTML</title>
+    <title>QuizApp - Galaxy</title>
 
     <script src="script.js"></script>
     <script src="database.js"></script>
@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body onload="initGalaxy()">
 
     <div class="headerDiv">
         <div class="menuDiv">
@@ -56,42 +56,38 @@
                 <div class="card quizCard">
                     <img src="/img/quiz.png" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title" id="questionText">Willkommen zur QuizApp</h5> <br>
-                        <span class="textHeader">Bitte suche dir eine der Quiz Fragen aus.</span>
+                        <h5 class="card-title" id="questionText">Frage</h5> <br>
+
                         <div class="card mb-2">
-                            <div class="card-body card-button displayCenter">
-                                <a href="HTML.html" class="categoryDiv"> HTML </a>
+                            <div class="card-body card-button" id="answer_1">
+                                Antwort
                             </div>
                         </div>
 
                         <div class="card mb-2">
-                            <div class="card-body card-button displayCenter">
-                                <a href="CSS.html" class="categoryDiv"> CSS </a>
+                            <div class="card-body card-button" id="answer_2">
+                                Antwort
                             </div>
                         </div>
 
                         <div class="card mb-2">
-                            <div class="card-body card-button displayCenter">
-                                <a href="JS.html" class="categoryDiv"> JS </a>
+                            <div class="card-body card-button" id="answer_3">
+                                Antwort
                             </div>
                         </div>
 
                         <div class="card mb-2">
-                            <div class="card-body card-button displayCenter">
-                                <a href="Galaxy.html" class="categoryDiv"> Galaxy </a>
+                            <div class="card-body card-button" id="answer_4">
+                                Antwort
                             </div>
                         </div>
 
-                        <div class="card mb-2">
-                            <div class="card-body card-button displayCenter">
-                                <a href="Tierwelt.html" class="categoryDiv"> Tierwelt </a>
-                            </div>
-                        </div>
+                        <div class="question-footer">
+                            <span>
+                                <b>1</b> von <b id="quizNumber">1</b> Fragen
+                            </span>
 
-                        <div class="card mb-2">
-                            <div class="card-body card-button displayCenter">
-                                <a href="Technik.html" class="categoryDiv"> Technik </a>
-                            </div>
+                            <button type="button" class="btn btn-outline-primary">Nächste Frage</button>
                         </div>
                     </div>
                 </div>
