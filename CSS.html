@@ -26,31 +26,54 @@
 
     <div class="headerDiv">
         <div class="menuDiv">
+
             <div>
-                <img src="img/logo.png">
+               <a href="index.html"><img src="img/logo.png"></a>
             </div>
+
             <div class="menuPointsDiv">
-                <div class="margin">
-                    <a href="HTML.html" class="h2Text"><h2>HTML</h2></a>
-                </div>
-                <div class="margin">
-                    <a href="CSS.html" class="h2Text"><h2>CSS</h2></a>
-                </div>
-                <div class="margin">
-                    <a href="JS.html" class="h2Text"><h2>JS</h2></a>
-                </div>
+
+                <a href="HTML.html" class="h2Text">
+                    <div class="margin">
+                        <h2>HTML</h2>
+                    </div>
+                </a>
+
+                <a href="CSS.html" class="h2Text">
+                    <div class="margin">
+                        <h2>CSS</h2>
+                    </div>
+                </a>
+
+                <a href="JS.html" class="h2Text">
+                    <div class="margin">
+                        <h2>JS</h2>
+                    </div>
+                </a>
+
                 <span class="strokeDiv">__________________</span>
-                <div class="margin">
-                    <a href="Galaxy.html" class="h2Text"><h2>Galaxy</h2></a>
-                </div>
-                <div class="margin">
-                    <a href="Tierwelt.html" class="h2Text"><h2>Tierwelt</h2></a>
-                </div>
-                <div class="margin">
-                    <a href="Technik.html" class="h2Text"><h2>Technik</h2></a>
-                </div>
+
+                <a href="Galaxy.html" class="h2Text">
+                    <div class="margin">
+                        <h2>Galaxy</h2>
+                    </div>
+                </a>
+
+                <a href="Tierwelt.html" class="h2Text">
+                    <div class="margin">
+                        <h2>Tierwelt</h2>
+                    </div>
+                </a>
+
+                <a href="Technik.html" class="h2Text">
+                    <div class="margin">
+                        <h2>Technik</h2>
+                    </div>
+                </a>
             </div>
         </div>
+
+        
         <div class="background">
             <div class="cardDiv">
                 <div class="card quizCard">
@@ -58,26 +81,26 @@
                     <div class="card-body">
                         <h5 class="card-title" id="questionText">Frage</h5> <br>
 
-                        <div class="card mb-2">
-                            <div class="card-body card-button" id="answer_1">
+                        <div class="card mb-2 card-button" onclick="answer('answer_1')">
+                            <div class="card-body" id="answer_1">
                                 Antwort
                             </div>
                         </div>
 
-                        <div class="card mb-2">
-                            <div class="card-body card-button" id="answer_2">
+                        <div class="card mb-2 card-button" onclick="answer('answer_2')">
+                            <div class="card-body" id="answer_2">
                                 Antwort
                             </div>
                         </div>
 
-                        <div class="card mb-2">
-                            <div class="card-body card-button" id="answer_3">
+                        <div class="card mb-2 card-button" onclick="answer('answer_3')">
+                            <div class="card-body" id="answer_3">
                                 Antwort
                             </div>
                         </div>
 
-                        <div class="card mb-2">
-                            <div class="card-body card-button" id="answer_4">
+                        <div class="card mb-2 card-button" onclick="answer('answer_4')">
+                            <div class="card-body" id="answer_4">
                                 Antwort
                             </div>
                         </div>

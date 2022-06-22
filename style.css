@@ -95,12 +95,13 @@ h2:hover {
 
 .card-button {
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.);
+    transition: background-color 255ms;
 }
 
 .card-button:hover {
     cursor: pointer;
-    background-color: lightblue;
-
+    background-color: rgb(200, 241, 255);
 }
 
 .question-footer {
@@ -115,4 +116,12 @@ h2:hover {
     color: white;
     font-weight: 1000;
     margin-bottom: 10px;
+}
+
+.card-body {
+    font-weight: 600;
+}
+
+.bg-success, .bg-danger {
+    color: white;
 }

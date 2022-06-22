@@ -87,3 +87,28 @@ function showQuestionTechnik() {
     document.getElementById('answer_3').innerHTML = questionTechnik['answer_3'];
     document.getElementById('answer_4').innerHTML = questionTechnik['answer_4'];
 }
+
+
+function answerHTML(selection) {
+    let question = questionsHTML[currentQuestion];
+    let selectedQuestionNumber = selection.slice(-1);
+
+    if(selectedQuestionNumber == question['right_answer']) {
+        document.getElementById(selection).parentNode.classList.add('bg-success')
+    }else{
+        document.getElementById(selection).parentNode.classList.add('bg-danger')
+
+    }
+}
+
+function answer(selection) {
+    let question = questionsCSS[currentQuestion];
+    let selectedQuestionNumber = selection.slice(-1);
+
+    if(selectedQuestionNumber == question['right_answer']) {
+        document.getElementById(selection).parentNode.classList.add('bg-success')
+    }else{
+        document.getElementById(selection).parentNode.classList.add('bg-danger')
+
+    }
+}
