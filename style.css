@@ -11,18 +11,17 @@ h2 {
     align-items: center;
     font-weight: 600;
     color: white !important;
-}
-
-.h2Text {
-    text-decoration: none;
+    text-decoration: underline 0.10em blue;
+    transition: text-decoration-color 255ms;
 }
 
 h2:hover {
     cursor: pointer;
-    text-decoration: underline;
-    color: wheat;
-    background-color: rgb(6, 0, 83);
-    border-radius: 5px;
+    text-decoration-color: rgb(0, 255, 255) !important;
+}
+
+.h2Text {
+    text-decoration: none;
 }
 
 .headerDiv {
@@ -54,7 +53,7 @@ h2:hover {
     margin: 10px;
 }
 
-.cardDiv  {
+.cardDiv {
     height: 100vh;
     width: 100%;
     display: flex !important;
@@ -86,7 +85,7 @@ h2:hover {
 .displayCenter {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 .textHeader {
@@ -105,7 +104,7 @@ h2:hover {
 }
 
 .question-footer {
-    border-top: 1px solid rgba(0,0,0,0.4);
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: center;
