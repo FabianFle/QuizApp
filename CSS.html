@@ -9,6 +9,7 @@
 
     <script src="script.js"></script>
     <script src="database.js"></script>
+    <script src="confetti.js"></script>
     <link rel="icon" type="image/x-icon" href="img/quiz.ico.png">
     <link rel="stylesheet" href="style.css">
 
@@ -28,7 +29,7 @@
         <div class="menuDiv">
 
             <div>
-               <a href="index.html"><img src="img/logo.png"></a>
+                <a href="index.html"><img src="img/logo.png"></a>
             </div>
 
             <div class="menuPointsDiv">
@@ -73,12 +74,20 @@
             </div>
         </div>
 
-        
+
         <div class="background">
             <div class="cardDiv">
                 <div class="card quizCard">
-                    <img src="img/CSS.png" class="card-img-top">
-                    <div class="card-body">
+
+                    <img id="imgEndScene" src="img/CSS.png" class="card-img-top">
+                    
+                    <img id="imgEndScene2" onload="easterAgg()" src="img/ende.png" class="card-img-top d-none">
+                    <div id="endScene" class="endSceneDiv d-none">
+                        <img src="img/Pokal.png" class="pokalImg">
+                        <span>Du hast <b>1</b> von <b>1</b> Antworten richtig.</span>
+                        <a href="index.html" class="backToHome"><button type="button" class="btn btn-outline-primary">Zum Start</button></a>
+                    </div>
+                    <div class="card-body" id="hideAnswer">
                         <h5 class="card-title" id="questionText">Frage</h5> <br>
 
                         <div class="card mb-2 card-button" onclick="answer('answer_1')">
@@ -107,10 +116,11 @@
 
                         <div class="question-footer">
                             <span>
-                                <b>1</b> von <b id="quizNumber">1</b> Fragen
+                                <b id="questionNummber">1</b> von <b id="quizNumber">1</b> Fragen
                             </span>
 
-                            <button type="button" class="btn btn-outline-primary" id="nextButton" disabled>Nächste Frage</button>
+                            <button type="button" class="btn btn-outline-primary" id="nextButton" disabled
+                                onclick="nextQuestion()">Nächste Frage</button>
                         </div>
                     </div>
                 </div>

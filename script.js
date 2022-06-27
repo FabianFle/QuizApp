@@ -41,12 +41,11 @@ function initTechnik() {
 
 function showQuestion() {
 
-    if (currentQuestion >= questions.length) {
+    if (currentQuestion >= filterQuestions[0].length) {
         document.getElementById('hideAnswer').classList.add('d-none');
-        document.getElementById('questionText').innerHTML = 'Du hast es Geschaft :) Hurraaa'
-        document.getElementById('hideAnswer').classList.add('d-none');
-        document.getElementById('hideAnswer').classList.add('d-none');
-        document.getElementById('hideAnswer').classList.add('d-none');
+        document.getElementById('imgEndScene').classList.add('d-none');
+        document.getElementById('imgEndScene2').classList.remove('d-none');
+        document.getElementById('endScene').classList.remove('d-none');
     } else {
 
         let question = filterQuestions[0][currentQuestion];
@@ -59,11 +58,6 @@ function showQuestion() {
         document.getElementById('answer_4').innerHTML = question['answer_4'];
     }
 }
-
-// function renderCurrentQuestion() {
-//     document.getElementById('quizNumber').innerHTML = filterQuestions[question].length;
-// }
-
 
 function answer(selection) {
     let question = filterQuestions[0][currentQuestion];

@@ -51,11 +51,11 @@ let questions = [
     },
     {
         "category": "CSS",
-        "question": "Wie werden Kommentare in CSS hinzugefügt?",
+        "question": "Wie werden Kommentare in CSS hinzugefügt? <br> <p>Hinweis: Den Punkt nach der Klammer(<) bitte ignorieren.</p>",
         "answer_1": "/* das ist ein Kommentar */",
         "answer_2": "// das ist ein Kommentar //",
         "answer_3": "// das ist ein Kommentar",
-        "answer_4": "<!-- das ist ein Kommentar-->",
+        "answer_4": "<.!-- das ist ein Kommentar-->",
         "right_answer": 1
     },
     {
@@ -100,11 +100,11 @@ let questions = [
     },
     {
         "category": "JS",
-        "question": "Wo schreibt man den JavaScript code rein?",
-        "answer_1": "<header></header>",
-        "answer_2": "<style></style>",
-        "answer_3": "<script></script>",
-        "answer_4": "<body></body>",
+        "question": "Wo schreibt man den JavaScript code rein? <br> <p>Hinweis: Den Punkt nach der Klammer(<) bitte ignorieren.</p>",
+        "answer_1": "<.header></header>",
+        "answer_2": "<.style></style>",
+        "answer_3": "<.script></script>",
+        "answer_4": "<.body></body>",
         "right_answer": 3
     },
     {
