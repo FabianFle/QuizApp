@@ -77,29 +77,29 @@
         <div class="background">
             <div class="cardDiv">
                 <div class="card quizCard">
-                    <img src="img/quiz.png" class="card-img-top">
+                    <img src="img/HTML.png" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title" id="questionText">Frage</h5> <br>
 
-                        <div class="card mb-2 card-button" onclick="answer('answer_1')">
+                        <div id="hideAnswer" class="card mb-2 card-button" onclick="answer('answer_1')">
                             <div class="card-body" id="answer_1">
                                 Antwort
                             </div>
                         </div>
 
-                        <div class="card mb-2 card-button" onclick="answer('answer_2')">
+                        <div id="hideAnswer" class="card mb-2 card-button" onclick="answer('answer_2')">
                             <div class="card-body" id="answer_2">
                                 Antwort
                             </div>
                         </div>
 
-                        <div class="card mb-2 card-button" onclick="answer('answer_3')">
+                        <div id="hideAnswer" class="card mb-2 card-button" onclick="answer('answer_3')">
                             <div class="card-body" id="answer_3">
                                 Antwort
                             </div>
                         </div>
 
-                        <div class="card mb-2 card-button" onclick="answer('answer_4')">
+                        <div id="hideAnswer" class="card mb-2 card-button" onclick="answer('answer_4')">
                             <div class="card-body" id="answer_4">
                                 Antwort
                             </div>
@@ -107,10 +107,10 @@
 
                         <div class="question-footer">
                             <span>
-                                <b>1</b> von <b id="quizNumber">1</b> Fragen
+                                <b id="questionNummber">1</b> von <b id="quizNumber">1</b> Fragen
                             </span>
 
-                            <button type="button" class="btn btn-outline-primary">Nächste Frage</button>
+                            <button type="button" class="btn btn-outline-primary" id="nextButton" disabled onclick="nextQuestion()">Nächste Frage</button>
                         </div>
                     </div>
                 </div>

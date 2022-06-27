@@ -24,6 +24,16 @@ h2:hover {
     text-decoration: none;
 }
 
+p {
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.d-none {
+    display: none;
+}
+
 .headerDiv {
     display: flex;
     justify-content: center;

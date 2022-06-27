@@ -1,6 +1,6 @@
 let currentQuestion = 0;
 let filterQuestions = [];
-
+let rightquestions = 0;
 
 function initHTML() {
     let questionsFilter = questions.filter(questions => questions.category === 'HTML');
@@ -40,26 +40,68 @@ function initTechnik() {
 
 
 function showQuestion() {
-    let question = filterQuestions[0][currentQuestion];
-    document.getElementById('questionText').innerHTML = question ['question'];
-    document.getElementById('answer_1').innerHTML = question['answer_1'];
-    document.getElementById('answer_2').innerHTML = question['answer_2'];
-    document.getElementById('answer_3').innerHTML = question['answer_3'];
-    document.getElementById('answer_4').innerHTML = question['answer_4'];
+
+    if (currentQuestion >= questions.length) {
+        document.getElementById('hideAnswer').classList.add('d-none');
+        document.getElementById('questionText').innerHTML = 'Du hast es Geschaft :) Hurraaa'
+        document.getElementById('hideAnswer').classList.add('d-none');
+        document.getElementById('hideAnswer').classList.add('d-none');
+        document.getElementById('hideAnswer').classList.add('d-none');
+    } else {
+
+        let question = filterQuestions[0][currentQuestion];
+
+        document.getElementById('questionNummber').innerHTML = currentQuestion + 1;
+        document.getElementById('questionText').innerHTML = question['question'];
+        document.getElementById('answer_1').innerHTML = question['answer_1'];
+        document.getElementById('answer_2').innerHTML = question['answer_2'];
+        document.getElementById('answer_3').innerHTML = question['answer_3'];
+        document.getElementById('answer_4').innerHTML = question['answer_4'];
+    }
 }
+
+// function renderCurrentQuestion() {
+//     document.getElementById('quizNumber').innerHTML = filterQuestions[question].length;
+// }
 
 
 function answer(selection) {
     let question = filterQuestions[0][currentQuestion];
     let selectedQuestionNumber = selection.slice(-1);
-
     let idOfRightAnswer = `answer_${question['right_answer']}`;
 
-    if(selectedQuestionNumber == question['right_answer']) {
+    if (selectedQuestionNumber == question['right_answer']) {
         document.getElementById(selection).parentNode.classList.add('bg-success')
-    }else{
+    } else {
         document.getElementById(selection).parentNode.classList.add('bg-danger')
         document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success')
 
     }
+    document.getElementById('nextButton').disabled = false;
+}
+
+function nextQuestion() {
+    currentQuestion++;
+    document.getElementById('nextButton').disabled = true;
+    resetAnswer();
+    showQuestion();
+
+}
+
+function resetAnswer() {
+    document.getElementById('answer_1').parentNode.classList.remove('bg-success');
+    document.getElementById('answer_1').parentNode.classList.remove('bg-danger');
+    document.getElementById('answer_2').parentNode.classList.remove('bg-success');
+    document.getElementById('answer_2').parentNode.classList.remove('bg-danger');
+    document.getElementById('answer_3').parentNode.classList.remove('bg-success');
+    document.getElementById('answer_3').parentNode.classList.remove('bg-danger');
+    document.getElementById('answer_4').parentNode.classList.remove('bg-success');
+    document.getElementById('answer_4').parentNode.classList.remove('bg-danger');
+}
+
+function progressBarInPercent() {
+    let percent = (currentquestion + 1) / questions.length;
+    percent = Math.round(percent * 100);
+    document.getElementById('progress-bar').innerHTML = `${percent}%`;
+    document.getElementById('progress-bar').style = `width: ${percent}%`;
 }

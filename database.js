@@ -11,11 +11,11 @@ let questions = [
     },
     {
         "category": "HTML",
-        "question": "Wie fügt man ein Bild ein?",
-        "answer_1": "<picture='...'>",
-        "answer_2": "<body img='...' alt='...'>",
-        "answer_3": "<href src='...' alt='...'>",
-        "answer_4": "<img src='...' alt='...''>",
+        "question": "Wie fügt man ein Bild ein? <br> <p>Hinweis: Den Punkt nach der Klammer(<) bitte ignorieren.</p>",
+        "answer_1": "<.picture='...'>",
+        "answer_2": "<.body img='...' alt='...'>",
+        "answer_3": "<.href src='...' alt='...'>",
+        "answer_4": "<.img src='...' alt='...''>",
         "right_answer": 4
     },
     {
