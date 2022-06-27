@@ -5,51 +5,59 @@ let rightquestions = 0;
 function initHTML() {
     let questionsFilter = questions.filter(questions => questions.category === 'HTML');
     filterQuestions.push(questionsFilter);
+    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
     showQuestion()
 }
 
 function initCSS() {
     let questionsFilter = questions.filter(question => question.category === 'CSS');
     filterQuestions.push(questionsFilter);
+    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
     showQuestion()
 }
 
 function initJS() {
     let questionsFilter = questions.filter(question => question.category === 'JS');
     filterQuestions.push(questionsFilter);
+    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
     showQuestion()
 }
 
 function initGalaxy() {
     let questionsFilter = questions.filter(question => question.category === 'Galaxy');
     filterQuestions.push(questionsFilter);
+    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
     showQuestion()
 }
 
 function initTierwelt() {
     let questionsFilter = questions.filter(question => question.category === 'Tierwelt');
     filterQuestions.push(questionsFilter);
+    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
     showQuestion()
 }
 
 function initTechnik() {
     let questionsFilter = questions.filter(question => question.category === 'Technik');
     filterQuestions.push(questionsFilter);
+    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
     showQuestion()
 }
 
+function quizEndSettings(){
+    document.getElementById('hideAnswer').classList.add('d-none');
+    document.getElementById('imgEndScene').classList.add('d-none');
+    document.getElementById('imgEndScene2').classList.remove('d-none');
+    document.getElementById('endScene').classList.remove('d-none');
+    document.getElementById('amountOfQuestions').innerHTML = filterQuestions[0].length;
+    document.getElementById('amountOfRightQuestions').innerHTML = rightquestions;
+}
 
 function showQuestion() {
-
     if (currentQuestion >= filterQuestions[0].length) {
-        document.getElementById('hideAnswer').classList.add('d-none');
-        document.getElementById('imgEndScene').classList.add('d-none');
-        document.getElementById('imgEndScene2').classList.remove('d-none');
-        document.getElementById('endScene').classList.remove('d-none');
+        quizEndSettings()
     } else {
-
         let question = filterQuestions[0][currentQuestion];
-
         document.getElementById('questionNummber').innerHTML = currentQuestion + 1;
         document.getElementById('questionText').innerHTML = question['question'];
         document.getElementById('answer_1').innerHTML = question['answer_1'];
