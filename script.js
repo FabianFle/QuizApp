@@ -1,114 +1,65 @@
 let currentQuestion = 0;
-
+let filterQuestions = [];
 
 
 function initHTML() {
-    document.getElementById('quizNumber').innerHTML = questionsHTML.length;
-    showQuestionHTML()
+    let questionsFilter = questions.filter(questions => questions.category === 'HTML');
+    filterQuestions.push(questionsFilter);
+    showQuestion()
 }
 
 function initCSS() {
-    document.getElementById('quizNumber').innerHTML = questionsCSS.length;
-    showQuestionCSS()
+    let questionsFilter = questions.filter(question => question.category === 'CSS');
+    filterQuestions.push(questionsFilter);
+    showQuestion()
 }
 
 function initJS() {
-    document.getElementById('quizNumber').innerHTML = questionsJS.length;
-    showQuestionJS()
+    let questionsFilter = questions.filter(question => question.category === 'JS');
+    filterQuestions.push(questionsFilter);
+    showQuestion()
 }
 
 function initGalaxy() {
-    document.getElementById('quizNumber').innerHTML = questionsGalaxy.length;
-    showQuestionGalaxy()
+    let questionsFilter = questions.filter(question => question.category === 'Galaxy');
+    filterQuestions.push(questionsFilter);
+    showQuestion()
 }
 
 function initTierwelt() {
-    document.getElementById('quizNumber').innerHTML = questionsTierwelt.length;
-    showQuestionTierwelt()
+    let questionsFilter = questions.filter(question => question.category === 'Tierwelt');
+    filterQuestions.push(questionsFilter);
+    showQuestion()
 }
 
 function initTechnik() {
-    document.getElementById('quizNumber').innerHTML = questionsTechnik.length;
-    showQuestionTechnik()
+    let questionsFilter = questions.filter(question => question.category === 'Technik');
+    filterQuestions.push(questionsFilter);
+    showQuestion()
 }
 
 
-
-function showQuestionHTML() {
-    let questionHTML = questionsHTML[currentQuestion];
-    document.getElementById('questionText').innerHTML = questionHTML['question'];
-    document.getElementById('answer_1').innerHTML = questionHTML['answer_1'];
-    document.getElementById('answer_2').innerHTML = questionHTML['answer_2'];
-    document.getElementById('answer_3').innerHTML = questionHTML['answer_3'];
-    document.getElementById('answer_4').innerHTML = questionHTML['answer_4'];
+function showQuestion() {
+    let question = filterQuestions[0][currentQuestion];
+    document.getElementById('questionText').innerHTML = question ['question'];
+    document.getElementById('answer_1').innerHTML = question['answer_1'];
+    document.getElementById('answer_2').innerHTML = question['answer_2'];
+    document.getElementById('answer_3').innerHTML = question['answer_3'];
+    document.getElementById('answer_4').innerHTML = question['answer_4'];
 }
 
-function showQuestionCSS() {
-    let questionCSS = questionsCSS[currentQuestion];
-    document.getElementById('questionText').innerHTML = questionCSS['question'];
-    document.getElementById('answer_1').innerHTML = questionCSS['answer_1'];
-    document.getElementById('answer_2').innerHTML = questionCSS['answer_2'];
-    document.getElementById('answer_3').innerHTML = questionCSS['answer_3'];
-    document.getElementById('answer_4').innerHTML = questionCSS['answer_4'];
-}
-
-function showQuestionJS() {
-    let questionJS = questionsJS[currentQuestion];
-    document.getElementById('questionText').innerHTML = questionJS['question'];
-    document.getElementById('answer_1').innerHTML = questionJS['answer_1'];
-    document.getElementById('answer_2').innerHTML = questionJS['answer_2'];
-    document.getElementById('answer_3').innerHTML = questionJS['answer_3'];
-    document.getElementById('answer_4').innerHTML = questionJS['answer_4'];
-}
-
-function showQuestionGalaxy() {
-    let questionGalaxy = questionsGalaxy[currentQuestion];
-    document.getElementById('questionText').innerHTML = questionGalaxy['question'];
-    document.getElementById('answer_1').innerHTML = questionGalaxy['answer_1'];
-    document.getElementById('answer_2').innerHTML = questionGalaxy['answer_2'];
-    document.getElementById('answer_3').innerHTML = questionGalaxy['answer_3'];
-    document.getElementById('answer_4').innerHTML = questionGalaxy['answer_4'];
-}
-
-function showQuestionTierwelt() {
-    let questionTierwelt = questionsTierwelt[currentQuestion];
-    document.getElementById('questionText').innerHTML = questionTierwelt['question'];
-    document.getElementById('answer_1').innerHTML = questionTierwelt['answer_1'];
-    document.getElementById('answer_2').innerHTML = questionTierwelt['answer_2'];
-    document.getElementById('answer_3').innerHTML = questionTierwelt['answer_3'];
-    document.getElementById('answer_4').innerHTML = questionTierwelt['answer_4'];
-}
-
-function showQuestionTechnik() {
-    let questionTechnik = questionsTechnik[currentQuestion];
-    document.getElementById('questionText').innerHTML = questionTechnik['question'];
-    document.getElementById('answer_1').innerHTML = questionTechnik['answer_1'];
-    document.getElementById('answer_2').innerHTML = questionTechnik['answer_2'];
-    document.getElementById('answer_3').innerHTML = questionTechnik['answer_3'];
-    document.getElementById('answer_4').innerHTML = questionTechnik['answer_4'];
-}
-
-
-function answerHTML(selection) {
-    let question = questionsHTML[currentQuestion];
-    let selectedQuestionNumber = selection.slice(-1);
-
-    if(selectedQuestionNumber == question['right_answer']) {
-        document.getElementById(selection).parentNode.classList.add('bg-success')
-    }else{
-        document.getElementById(selection).parentNode.classList.add('bg-danger')
-
-    }
-}
 
 function answer(selection) {
-    let question = questionsCSS[currentQuestion];
+    let question = filterQuestions[0][currentQuestion];
     let selectedQuestionNumber = selection.slice(-1);
+
+    let idOfRightAnswer = `answer_${question['right_answer']}`;
 
     if(selectedQuestionNumber == question['right_answer']) {
         document.getElementById(selection).parentNode.classList.add('bg-success')
     }else{
         document.getElementById(selection).parentNode.classList.add('bg-danger')
+        document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success')
 
     }
 }

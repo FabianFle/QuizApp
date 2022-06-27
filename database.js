@@ -1,6 +1,7 @@
-let questionsHTML = [
+let questions = [
     { //HTML
 
+        "category": "HTML",
         "question": "Wer hat HTML erfunden?",
         "answer_1": "Robbie Williams",
         "answer_2": "Lady Gaga",
@@ -9,6 +10,7 @@ let questionsHTML = [
         "right_answer": 3
     },
     {
+        "category": "HTML",
         "question": "Wie fügt man ein Bild ein?",
         "answer_1": "<picture='...'>",
         "answer_2": "<body img='...' alt='...'>",
@@ -17,6 +19,7 @@ let questionsHTML = [
         "right_answer": 4
     },
     {
+        "category": "HTML",
         "question": "Mit welchem HTML-Element wird ein Text kursiv geschrieben?",
         "answer_1": "< k >",
         "answer_2": "< p >",
@@ -25,20 +28,20 @@ let questionsHTML = [
         "right_answer": 4
     },
     {
+        "category": "HTML",
         "question": "Welche Aussage stimmt nicht?",
         "answer_1": "HTML-Dateien können in jedem Browser geöffnet werden",
         "answer_2": "HTML-Dateien können mit jedem beliebigen Editor erstellt werden",
         "answer_3": "HTML ist eine Programmiersprache",
         "answer_4": "HTML ist für Webseiten",
         "right_answer": 3
-    }
-];
+    },
 
 //#####################################################################################################
 
-let questionsCSS = [
     {//CSS
 
+        "category": "CSS",
         "question": "Was ist CSS?",
         "answer_1": "Eine Programmiersprache",
         "answer_2": "Eine Computersprache um Websites aufzubauen und zu strukturieren",
@@ -47,6 +50,7 @@ let questionsCSS = [
         "right_answer": 2
     },
     {
+        "category": "CSS",
         "question": "Wie werden Kommentare in CSS hinzugefügt?",
         "answer_1": "/* das ist ein Kommentar */",
         "answer_2": "// das ist ein Kommentar //",
@@ -55,6 +59,7 @@ let questionsCSS = [
         "right_answer": 1
     },
     {
+        "category": "CSS",
         "question": "Mit welcher Eigenschaft wird die Textfarbe verändert?",
         "answer_1": "fontcolor:",
         "answer_2": "font-color:",
@@ -63,20 +68,20 @@ let questionsCSS = [
         "right_answer": 3
     },
     {
+        "category": "CSS",
         "question": "Was ist der Inhalt eines Stylesheets?",
         "answer_1": "Ersatzangaben für die font-Tags",
         "answer_2": "Formatangaben zur Darstellung eines Webdokuments",
         "answer_3": "Angaben, die verschiedene Inhalte der Website miteinander verbinden",
         "answer_4": "Struktur der Website",
         "right_answer": 2
-    }
-];
+    },
 
 //#####################################################################################################
 
-let questionsJS = [
     {//JS
 
+        "category": "JS",
         "question": "Wie heißt der Erfinder von JavaScript?",
         "answer_1": "Douglas Crockford",
         "answer_2": "John Resig",
@@ -85,6 +90,7 @@ let questionsJS = [
         "right_answer": 3
     },
     {
+        "category": "JS",
         "question": "JavaScript ist ein/e....?",
         "answer_1": "Freamwork",
         "answer_2": "Programmiersprache",
@@ -93,6 +99,7 @@ let questionsJS = [
         "right_answer": 2
     },
     {
+        "category": "JS",
         "question": "Wo schreibt man den JavaScript code rein?",
         "answer_1": "<header></header>",
         "answer_2": "<style></style>",
@@ -101,20 +108,20 @@ let questionsJS = [
         "right_answer": 3
     },
     {
+        "category": "JS",
         "question": "Worum handelt es sich hierbei: for (let i = 0; i < 0; i++) {}?",
         "answer_1": "Array",
         "answer_2": "Funktion",
         "answer_3": "String",
         "answer_4": "For-Schleife",
         "right_answer": 4
-    }
-];
+    },
 
 //#####################################################################################################
 
-let questionsGalaxy = [
     {//Galaxy
 
+        "category": "Galaxy",
         "question": "Wie lange dauert es, bis man eine veränderung der Sonne, auf der Erde sieht?",
         "answer_1": "1 Stunde",
         "answer_2": "8 Minuten",
@@ -123,6 +130,7 @@ let questionsGalaxy = [
         "right_answer": 2
     },
     {
+        "category": "Galaxy",
         "question": "Wie viele Planeten hat unsere Sonnensystem?",
         "answer_1": "6",
         "answer_2": "8",
@@ -131,6 +139,7 @@ let questionsGalaxy = [
         "right_answer": 2
     },
     {
+        "category": "Galaxy",
         "question": "Wie groß ist die Erde?",
         "answer_1": "5.349 km",
         "answer_2": "7.432 km",
@@ -139,20 +148,20 @@ let questionsGalaxy = [
         "right_answer": 4
     },
     {
+        "category": "Galaxy",
         "question": "An welcher stelle steht unsere Erde im Sonnensystem?",
         "answer_1": "3",
         "answer_2": "4",
         "answer_3": "5",
         "answer_4": "6",
         "right_answer": 1
-    }
-];
+    },
 
 //#####################################################################################################
 
-let questionsTierwelt = [
     {//Tierwelt
 
+        "category": "Tierwelt",
         "question": "Was ist das größte Tier der welt?",
         "answer_1": "Potwal",
         "answer_2": "Blauwal",
@@ -161,6 +170,7 @@ let questionsTierwelt = [
         "right_answer": 2
     },
     {
+        "category": "Tierwelt",
         "question": "Wie schwer kann ein Blauwal werden?",
         "answer_1": "Bis zu 1.000 Kilogramm",
         "answer_2": "Bis zu 20.000 Kilogramm",
@@ -169,6 +179,7 @@ let questionsTierwelt = [
         "right_answer": 4
     },
     {
+        "category": "Tierwelt",
         "question": "Welches Tier nennen wir auch = den besten Freund des Menschen?",
         "answer_1": "Löwe",
         "answer_2": "Spatz",
@@ -177,20 +188,20 @@ let questionsTierwelt = [
         "right_answer": 3
     },
     {
+        "category": "Tierwelt",
         "question": "Zu welcher Familie gehört der Fuchs?",
         "answer_1": "Zur Familie der Katzen",
         "answer_2": "Zur Familie der Hunde",
         "answer_3": "Zur Familie der Bären",
         "answer_4": "Zur Familie der Mäuse",
         "right_answer": 2
-    }
-];
+    },
 
 //#####################################################################################################
 
-let questionsTechnik = [
     {//Technik
 
+        "category": "Technik",
         "question": "Welche Reihenfolge ist richtig",
         "answer_1": "byte - Kilobyte - Megabyte - Gigabyte - Terabyte - Petabyte",
         "answer_2": "byte - Megabyte - Kilobyte - Gigabyte - Terabyte - Petabyte",
@@ -199,6 +210,7 @@ let questionsTechnik = [
         "right_answer": 1
     },
     {
+        "category": "Technik",
         "question": "Was ist keine Leistungssteigerer komponente",
         "answer_1": "GPU",
         "answer_2": "CPU",
@@ -207,6 +219,7 @@ let questionsTechnik = [
         "right_answer": 4
     },
     {
+        "category": "Technik",
         "question": "Was heißt CPU",
         "answer_1": "Core Programmable User",
         "answer_2": "Calculating Professor Unit",
@@ -215,6 +228,7 @@ let questionsTechnik = [
         "right_answer": 3
     },
     {
+        "category": "Technik",
         "question": "Was verbirgt sich hinter der Abkürzung SATA?",
         "answer_1": "Eine Einheit zur Leistungsmessung",
         "answer_2": "Eine Datenschnittstelle",
