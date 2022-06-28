@@ -36,6 +36,24 @@ let questions = [
         "answer_4": "HTML ist für Webseiten",
         "right_answer": 3
     },
+    {
+        "category": "HTML",
+        "question": "Was ist <b>Kein</b> HTML Tag? <br> <p>Hinweis: Den Punkt nach der Klammer(<) bitte ignorieren.</p>",
+        "answer_1": "<.border></border>",
+        "answer_2": "<.body></body>",
+        "answer_3": "<.div></div>",
+        "answer_4": "<.h1></h1>",
+        "right_answer": 1
+    },
+    {
+        "category": "HTML",
+        "question": "Wie viele Tags enthält ein reguläres Element?",
+        "answer_1": "1",
+        "answer_2": "2",
+        "answer_3": "3",
+        "answer_4": "4",
+        "right_answer": 2
+    },
 
 //#####################################################################################################
 
@@ -76,6 +94,24 @@ let questions = [
         "answer_4": "Struktur der Website",
         "right_answer": 2
     },
+    {
+        "category": "CSS",
+        "question": "Was ist <b>keine</b> CSS eigenschaft?",
+        "answer_1": "border",
+        "answer_2": "font-family",
+        "answer_3": "cursor",
+        "answer_4": "onload",
+        "right_answer": 4
+    },
+    {
+        "category": "CSS",
+        "question": "Wie kann man CSS auf eine HTML Seite einbinden? <br> <p>Hinweis: Den Punkt nach der Klammer(<) bitte ignorieren.</p>",
+        "answer_1": "<.header></header>",
+        "answer_2": "<.script></script>",
+        "answer_3": "<.style></style>",
+        "answer_4": "<.body></body>",
+        "right_answer": 3
+    },
 
 //#####################################################################################################
 
@@ -114,6 +150,24 @@ let questions = [
         "answer_2": "Funktion",
         "answer_3": "String",
         "answer_4": "For-Schleife",
+        "right_answer": 4
+    },
+    {
+        "category": "JS",
+        "question": "Wie hieß JavaScript früher? ",
+        "answer_1": "Live Script",
+        "answer_2": "Java",
+        "answer_3": "TypeScript",
+        "answer_4": "Seit anfang an heißt es JavaScript",
+        "right_answer": 1
+    },
+    {
+        "category": "JS",
+        "question": "Wie lautet die korrekte JavaScript-Syntax, um den Inhalt des unten stehenden HTML-Elements zu ändern? <br> <.p id='demo'>Dies ist eine Demonstration.</p> <br> Hinweis: Die doppelten Anführungszeichen wurden durch (') ersetzt.",
+        "answer_1": "document.getElementByName('p').innerHTML = 'Hello World!';",
+        "answer_2": "#demo.innerHTML = 'Hello World!';",
+        "answer_3": "document.getElement('p').innerHTML = 'Hello World!';",
+        "answer_4": "document.getElementById('demo').innerHTML = 'Hello World!';",
         "right_answer": 4
     },
 
@@ -156,6 +210,42 @@ let questions = [
         "answer_4": "6",
         "right_answer": 1
     },
+    {
+        "category": "Galaxy",
+        "question": "Welcher Planet unseres Sonnensystems hat die meisten Monde?",
+        "answer_1": "Jupita",
+        "answer_2": "Saturn",
+        "answer_3": "Uranus",
+        "answer_4": "Neptun",
+        "right_answer": 2
+    },
+    {
+        "category": "Galaxy",
+        "question": "Welcher der folgenden Planeten hat Ringe?",
+        "answer_1": "Merkur",
+        "answer_2": "Venus",
+        "answer_3": "Mars",
+        "answer_4": "Saturn",
+        "right_answer": 4
+    },
+    {
+        "category": "Galaxy",
+        "question": "Wie schnell ist Lichtgeschwindikeit?",
+        "answer_1": "299.792 km pro Sekunde",
+        "answer_2": "499.842 km pro Sekunde",
+        "answer_3": "199.994 km pro Sekunde",
+        "answer_4": "188.759.954 km pro Minute",
+        "right_answer": 1
+    },
+    {
+        "category": "Galaxy",
+        "question": "Wer gilt <b>nicht</b> mehr als Planet?",
+        "answer_1": "Merkur",
+        "answer_2": "Neptun",
+        "answer_3": "Uranus",
+        "answer_4": "Pluto",
+        "right_answer": 4
+    },
 
 //#####################################################################################################
 
@@ -163,11 +253,11 @@ let questions = [
 
         "category": "Tierwelt",
         "question": "Was ist das größte Tier der welt?",
-        "answer_1": "Potwal",
-        "answer_2": "Blauwal",
+        "answer_1": "Blauwal",
+        "answer_2": "Potwal",
         "answer_3": "Weißer Hai",
         "answer_4": "Orkar",
-        "right_answer": 2
+        "right_answer": 1
     },
     {
         "category": "Tierwelt",
@@ -196,6 +286,42 @@ let questions = [
         "answer_4": "Zur Familie der Mäuse",
         "right_answer": 2
     },
+    {
+        "category": "Tierwelt",
+        "question": "Wie groß werden Giraffen?",
+        "answer_1": "Männliche: 4-5 Meter / Weibliche: 5-6 Meter",
+        "answer_2": "Männliche: 5-6 Meter / Weibliche: 4-5 Meter",
+        "answer_3": "Männliche: 6-7 Meter / Weibliche: 3-4 Meter",
+        "answer_4": "Männliche: 4-5 Meter / Weibliche: 5-6 Meter",
+        "right_answer": 2
+    },
+    {
+        "category": "Tierwelt",
+        "question": "Wie viele Bienenarten gibt es (bekannte)?",
+        "answer_1": "7",
+        "answer_2": "5",
+        "answer_3": "2",
+        "answer_4": "9",
+        "right_answer": 4 
+    },
+    {
+        "category": "Tierwelt",
+        "question": "Was machen Murmeltiere bei Gefahr?",
+        "answer_1": "Sie fallen in Schockstarre",
+        "answer_2": "Sie hüpfen",
+        "answer_3": "Sie Pfeifen",
+        "answer_4": "Die drehen sich im Kreis",
+        "right_answer": 3
+    },
+    {
+        "category": "Tierwelt",
+        "question": "Wie lange schläft ein Löwe pro Tag?",
+        "answer_1": "2 Stunde",
+        "answer_2": "8 Stunde",
+        "answer_3": "15 Stunde",
+        "answer_4": "20 Stunde",
+        "right_answer": 4
+    },
 
 //#####################################################################################################
 
@@ -211,7 +337,7 @@ let questions = [
     },
     {
         "category": "Technik",
-        "question": "Was ist keine Leistungssteigerer komponente",
+        "question": "Was ist keine Leistungssteigernde komponente",
         "answer_1": "GPU",
         "answer_2": "CPU",
         "answer_3": "RAM",
@@ -226,6 +352,42 @@ let questions = [
         "answer_3": "Central Processing Unit",
         "answer_4": "County Pushchair Unveiling",
         "right_answer": 3
+    },
+    {
+        "category": "Technik",
+        "question": "Mit welcher Grafikkarten-Generation führte Nvidia Raytracing ein?",
+        "answer_1": "GTX 900",
+        "answer_2": "RTX 3000",
+        "answer_3": "GTX 1000",
+        "answer_4": "RTX 2000",
+        "right_answer": 4
+    },
+    {
+        "category": "Technik",
+        "question": "",
+        "answer_1": "",
+        "answer_2": "",
+        "answer_3": "",
+        "answer_4": "",
+        "right_answer": 4
+    },
+    {
+        "category": "Technik",
+        "question": "Ein 2,7 GHz PC wird zum Kauf angeboten.Was bedeutet der Wert 2,7GHz?",
+        "answer_1": "Die Taktfrequenz der CPU",
+        "answer_2": "Die Speicherkapazität der Festplatte",
+        "answer_3": "Die Zugriffszeit auf den RAM",
+        "answer_4": "Die Bildwiederholungsfrequenz",
+        "right_answer": 1
+    },
+    {
+        "category": "Technik",
+        "question": "Du beginnst einen Text am Computer zu schreiben. In welchem Speicher ist dieser vorläufig gespeichert?",
+        "answer_1": "Festplatte",
+        "answer_2": "RAM",
+        "answer_3": "ROM",
+        "answer_4": "Prozessor",
+        "right_answer": 2
     },
     {
         "category": "Technik",

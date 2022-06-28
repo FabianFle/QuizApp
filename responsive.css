@@ -16,6 +16,11 @@
         display: none;
     }
 
+    .pokalImg {
+        width: 250px;
+        height: 250px;
+    }
+    
     .quizCard {
         border-radius: 0;
         position: absolute !important;

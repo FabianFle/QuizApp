@@ -9,6 +9,7 @@
 
     <script src="script.js"></script>
     <script src="database.js"></script>
+    <script src="confetti.min.js"></script>
     <script src="confetti.js"></script>
     <link rel="icon" type="image/x-icon" href="img/quiz.ico.png">
     <link rel="stylesheet" href="style.css">
@@ -136,7 +137,7 @@
                     </div>
 
                     <div id="endScene" class="endSceneDiv d-none">
-                        <img src="img/Pokal.png" class="pokalImg">
+                        <img src="img/Pokal.png" onclick="start(), stop()" class="pokalImg">
                         <span>Du hast <b id="amountOfRightQuestions">1</b> von <b id="amountOfQuestions">1</b> Antworten
                             richtig.</span>
                         <a href="index.html" class="backToHome"><button type="button"

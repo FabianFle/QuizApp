@@ -9,6 +9,7 @@
 
     <script src="script.js"></script>
     <script src="database.js"></script>
+    <script src="confetti.min.js"></script>
     <script src="confetti.js"></script>
     <link rel="icon" type="image/x-icon" href="img/quiz.ico.png">
     <link rel="stylesheet" href="style.css">
@@ -121,13 +122,12 @@
             </div>
         </div>
 
-
         <div class="background">
             <div class="cardDiv">
                 <div class="card quizCard">
 
                     <img id="imgEndScene" src="img/HTML.png" class="card-img-top">
-                    <img id="imgEndScene2" onload="easterAgg()" src="img/ende.png" class="card-img-top d-none">
+                    <img id="imgEndScene2" src="img/ende.png" class="card-img-top d-none">
 
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" id="progressBar"
@@ -136,8 +136,11 @@
                     </div>
 
                     <div id="endScene" class="endSceneDiv d-none">
-                        <img src="img/Pokal.png" class="pokalImg">
-                        <span>Du hast <b id="amountOfRightQuestions">1</b> von <b id="amountOfQuestions">1</b> Antworten
+
+                        <img src="img/Pokal.png" onclick="start(), stop()" class="pokalImg">
+
+                        <span>Du hast <b id="amountOfRightQuestions">1</b> von <b id="amountOfQuestions">1</b>
+                            Antworten
                             richtig.</span>
                         <a href="index.html" class="backToHome"><button type="button"
                                 class="btn btn-outline-primary">Zum Start</button></a>
@@ -184,9 +187,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </body>
 
 </html>
