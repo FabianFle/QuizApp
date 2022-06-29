@@ -9,6 +9,7 @@ let AUDIO_HAPPY = new Audio('sound/happy.mp3');
 
 //#############################################################################################
 
+
 function initHTML() {
     let questionsFilter = questions.filter(questions => questions.category === 'HTML');
     filterQuestions.push(questionsFilter);
@@ -89,6 +90,7 @@ function furtherQuestions() {
     document.getElementById('answer_4').innerHTML = question['answer_4'];
 }
 
+
 function answer(selection) {
     let question = filterQuestions[0][currentQuestion];
     let selectedQuestionNumber = selection.slice(-1);
@@ -133,6 +135,7 @@ function progressBarInPercent() {
     document.getElementById('progressBar').innerHTML = `${percent}%`;
     document.getElementById('progressBar').style = `width: ${percent}%`;
 }
+
 
 function openMenu() {
     let element = document.getElementById("menuIconDiv");
