@@ -65,6 +65,8 @@ function quizEndSettings() {
     document.getElementById('amountOfQuestions').innerHTML = filterQuestions[0].length;
     document.getElementById('amountOfRightQuestions').innerHTML = rightquestions;
     AUDIO_HAPPY.play();
+    start();
+    stop();
 }
 
 
