@@ -138,6 +138,11 @@ p {
     background-color: rgb(200, 241, 255);
 }
 
+.btn 
+.btn-outline-primary {
+    z-index: 100 !important;
+}
+
 .question-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.4);
     display: flex;
@@ -158,4 +163,13 @@ p {
 
 .bg-success, .bg-danger {
     color: white;
+}
+
+.overlay {
+    display: none;
+    position: absolute !important;
+    z-index: 10 !important;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(128, 128, 128, 0.288);
 }

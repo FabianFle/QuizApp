@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizApp</title>
+    <title>QuizApp - JS</title>
 
     <script src="script.js"></script>
     <script src="database.js"></script>
+    <script src="confetti.min.js"></script>
     <script src="confetti.js"></script>
     <link rel="icon" type="image/x-icon" href="img/quiz.ico.png">
     <link rel="stylesheet" href="style.css">
@@ -24,7 +25,7 @@
 
 </head>
 
-<body>
+<body onload="initJS()">
 
     <div class="headerDiv">
         <div class="menuDiv">
@@ -35,33 +36,33 @@
                 <img onclick="openMenu()" class="menuImg" src="img/menu.png">
 
                 <div id="menuIconDiv" class="iconDiv iconDivDNone">
-                    <a href="quiz.html" class="h2Text" onclick="initHTML()">
+                    <a href="HTML.html" class="h2Text">
                         <div class="margin">
                             <h2>HTML</h2>
                         </div>
                     </a>
-                    <a href="quiz.html" class="h2Text" onclick="initCSS()">
+                    <a href="CSS.html" class="h2Text">
                         <div class="margin">
                             <h2>CSS</h2>
                         </div>
                     </a>
-                    <a href="quiz.html" class="h2Text" onclick="initJS()">
+                    <a href="JS.html" class="h2Text">
                         <div class="margin">
                             <h2>JS</h2>
                         </div>
                     </a>
                     <span class="strokeDiv">__________________</span>
-                    <a href="quiz.html" class="h2Text" onclick="initGalaxy()">
+                    <a href="Galaxy.html" class="h2Text">
                         <div class="margin">
                             <h2>Galaxy</h2>
                         </div>
                     </a>
-                    <a href="quiz.html" class="h2Text" onclick="initTierwelt()">
+                    <a href="Tierwelt.html" class="h2Text">
                         <div class="margin">
                             <h2>Tierwelt</h2>
                         </div>
                     </a>
-                    <a href="quiz.html" class="h2Text" onclick="initTechnik()">
+                    <a href="Technik.html" class="h2Text">
                         <div class="margin">
                             <h2>Technik</h2>
                         </div>
@@ -81,19 +82,19 @@
 
             <div class="menuPointsDiv">
 
-                <a href="quiz.html" class="h2Text" onclick="initHTML()">
+                <a href="HTML.html" class="h2Text">
                     <div class="margin">
                         <h2>HTML</h2>
                     </div>
                 </a>
 
-                <a href="quiz.html" class="h2Text" onclick="initCSS()">
+                <a href="CSS.html" class="h2Text">
                     <div class="margin">
                         <h2>CSS</h2>
                     </div>
                 </a>
 
-                <a href="quiz.html" class="h2Text" onclick="initJS()">
+                <a href="JS.html" class="h2Text">
                     <div class="margin">
                         <h2>JS</h2>
                     </div>
@@ -101,19 +102,19 @@
 
                 <span class="strokeDiv">__________________</span>
 
-                <a href="quiz.html" class="h2Text" onclick="initGalaxy()">
+                <a href="Galaxy.html" class="h2Text">
                     <div class="margin">
                         <h2>Galaxy</h2>
                     </div>
                 </a>
 
-                <a href="quiz.html" class="h2Text" onclick="initTierwelt()">
+                <a href="Tierwelt.html" class="h2Text">
                     <div class="margin">
                         <h2>Tierwelt</h2>
                     </div>
                 </a>
 
-                <a href="quiz.html" class="h2Text" onclick="initTechnik()">
+                <a href="Technik.html" class="h2Text">
                     <div class="margin">
                         <h2>Technik</h2>
                     </div>
@@ -125,57 +126,60 @@
         <div class="background">
             <div class="cardDiv">
                 <div class="card quizCard">
-                    <img src="img/quiz.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title" id="questionText">Willkommen zur QuizApp</h5> <br>
-                        <span class="textHeader">Bitte suche dir eine der Quiz Fragen aus.</span>
-                        <div class="card mb-2">
 
-                            <a href="quiz.html" class="categoryDiv" onclick="initHTML()">
-                                <div class="card-body card-button displayCenter">
-                                    HTML
-                                </div>
-                            </a>
+                    <img id="imgEndScene" src="img/JS.png" class="card-img-top">
+                    <img id="imgEndScene2" onload="easterAgg()" src="img/ende.png" class="card-img-top d-none">
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" id="progressBar"
+                            role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100">0%</div>
+                    </div>
+
+                    <div id="endScene" class="endSceneDiv d-none">
+                        <img src="img/Pokal.png" onclick="start(), stop()" class="pokalImg">
+                        <span>Du hast <b id="amountOfRightQuestions">1</b> von <b id="amountOfQuestions">1</b> Antworten
+                            richtig.</span>
+                        <a href="index.html" class="backToHome"><button type="button"
+                                class="btn btn-outline-primary">Zum Start</button></a>
+                        <a href="JS.html" class="backToHome"><button type="button"
+                                class="btn btn-outline-primary">Noch einmal spielen</button></a>
+                    </div>
+                    <!--  -->
+                    <div class="card-body" id="hideAnswer">
+                        <h5 class="card-title" id="questionText">Frage</h5> <br>
+
+                        <div class="card mb-2 card-button" onclick="answer('answer_1')">
+                            <div class="card-body" id="answer_1">
+                                Antwort
+                            </div>
                         </div>
 
-                        <div class="card mb-2">
-                            <a href="quiz.html" class="categoryDiv" onclick="initCSS()">
-                                <div class="card-body card-button displayCenter">
-                                    CSS
-                                </div>
-                            </a>
+                        <div class="card mb-2 card-button" onclick="answer('answer_2')">
+                            <div class="card-body" id="answer_2">
+                                Antwort
+                            </div>
                         </div>
 
-                        <div class="card mb-2">
-                            <a href="quiz.html" class="categoryDiv" onclick="initJS()">
-                                <div class="card-body card-button displayCenter">
-                                    JS
-                                </div>
-                            </a>
+                        <div class="card mb-2 card-button" onclick="answer('answer_3')">
+                            <div class="card-body" id="answer_3">
+                                Antwort
+                            </div>
                         </div>
 
-                        <div class="card mb-2">
-                            <a href="quiz.html" class="categoryDiv" onclick="initGalaxy()">
-                                <div class="card-body card-button displayCenter">
-                                    Galaxy
-                                </div>
-                            </a>
+                        <div class="card mb-2 card-button" onclick="answer('answer_4')">
+                            <div class="card-body" id="answer_4">
+                                Antwort
+                            </div>
                         </div>
 
-                        <div class="card mb-2">
-                            <a href="quiz.html" class="categoryDiv" onclick="initTierwelt()">
-                                <div class="card-body card-button displayCenter">
-                                    Tierwelt
-                                </div>
-                            </a>
-                        </div>
+                        <div class="question-footer">
+                            <span>
+                                <b id="questionNummber">1</b> von <b id="quizNumber">1</b> Fragen
+                            </span>
 
-                        <div class="card mb-2">
-                            <a href="quiz.html" class="categoryDiv" onclick="initTechnik()">
-                                <div class="card-body card-button displayCenter">
-                                    Technik
-                                </div>
-                            </a>
+                            <button type="button" class="btn btn-outline-primary" id="nextButton" disabled
+                                onclick="nextQuestion()">Nächste Frage</button>
                         </div>
                     </div>
                 </div>

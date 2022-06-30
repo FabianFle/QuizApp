@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizApp - JS</title>
+    <title>QuizApp - Technik</title>
 
     <script src="script.js"></script>
     <script src="database.js"></script>
@@ -25,12 +25,10 @@
 
 </head>
 
-<body onload="initJS()">
+<body onload="initTechnik()">
 
     <div class="headerDiv">
         <div class="menuDiv">
-
-
 
             <div class="responsiveMenu">
                 <img onclick="openMenu()" class="menuImg" src="img/menu.png">
@@ -127,7 +125,7 @@
             <div class="cardDiv">
                 <div class="card quizCard">
 
-                    <img id="imgEndScene" src="img/JS.png" class="card-img-top">
+                    <img id="imgEndScene" src="img/Technik.png" class="card-img-top">
                     <img id="imgEndScene2" onload="easterAgg()" src="img/ende.png" class="card-img-top d-none">
 
                     <div class="progress">
@@ -142,14 +140,15 @@
                             richtig.</span>
                         <a href="index.html" class="backToHome"><button type="button"
                                 class="btn btn-outline-primary">Zum Start</button></a>
-                        <a href="HTML.html" class="backToHome"><button type="button"
+                        <a href="Technik.html" class="backToHome"><button type="button"
                                 class="btn btn-outline-primary">Noch einmal spielen</button></a>
                     </div>
-                    <!--  -->
+
+                    
                     <div class="card-body" id="hideAnswer">
                         <h5 class="card-title" id="questionText">Frage</h5> <br>
 
-                        <div class="card mb-2 card-button" onclick="answer('answer_1')">
+                       <div class="card mb-2 card-button" onclick="answer('answer_1')">
                             <div class="card-body" id="answer_1">
                                 Antwort
                             </div>

@@ -364,11 +364,11 @@ let questions = [
     },
     {
         "category": "Technik",
-        "question": "",
-        "answer_1": "",
-        "answer_2": "",
-        "answer_3": "",
-        "answer_4": "",
+        "question": "Wie groß ist 1 Gigabit (in Megabyte)?",
+        "answer_1": "100 Megabyte",
+        "answer_2": "200 Megabyte",
+        "answer_3": "150 Megabyte",
+        "answer_4": "125 Megabyte",
         "right_answer": 4
     },
     {

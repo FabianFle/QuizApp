@@ -7,55 +7,59 @@ let AUDIO_FAIL = new Audio('sound/wrong.mp3');
 let AUDIO_HAPPY = new Audio('sound/happy.mp3');
 
 
+//TO DO
+
+// - Antworten bearbeiten (es darf keine merfach antwortmöglichkeiten geben)
+
+
 //#############################################################################################
 
+function initAdded() {
+    document.body.add('onloade') = "initCSS()";
+}
 
 function initHTML() {
     let questionsFilter = questions.filter(questions => questions.category === 'HTML');
     filterQuestions.push(questionsFilter);
     document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion()
+    showQuestion();
 }
-
 
 function initCSS() {
     let questionsFilter = questions.filter(question => question.category === 'CSS');
     filterQuestions.push(questionsFilter);
     document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion()
+    showQuestion();
 }
-
 
 function initJS() {
     let questionsFilter = questions.filter(question => question.category === 'JS');
     filterQuestions.push(questionsFilter);
     document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion()
+    showQuestion();
 }
-
 
 function initGalaxy() {
     let questionsFilter = questions.filter(question => question.category === 'Galaxy');
     filterQuestions.push(questionsFilter);
     document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion()
+    showQuestion();
 }
-
 
 function initTierwelt() {
     let questionsFilter = questions.filter(question => question.category === 'Tierwelt');
     filterQuestions.push(questionsFilter);
     document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion()
+    showQuestion();
 }
-
 
 function initTechnik() {
     let questionsFilter = questions.filter(question => question.category === 'Technik');
     filterQuestions.push(questionsFilter);
     document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion()
+    showQuestion();
 }
+
 
 
 function quizEndSettings() {
@@ -74,13 +78,14 @@ function quizEndSettings() {
 function showQuestion() {
     if (currentQuestion >= filterQuestions[0].length) {
         quizEndSettings();
+        progressBarInPercent();
     } else {
         progressBarInPercent();
         furtherQuestions();
     }
 }
 
-function furtherQuestions() {
+function furtherQuestions(event) {
     let question = filterQuestions[0][currentQuestion];
     document.getElementById('questionNummber').innerHTML = currentQuestion + 1;
     document.getElementById('questionText').innerHTML = question['question'];
@@ -130,7 +135,7 @@ function resetAnswer() {
 
 
 function progressBarInPercent() {
-    let percent = (currentQuestion + 1) / filterQuestions[0].length;
+    let percent = (currentQuestion) / filterQuestions[0].length;
     percent = Math.round(percent * 100);
     document.getElementById('progressBar').innerHTML = `${percent}%`;
     document.getElementById('progressBar').style = `width: ${percent}%`;
@@ -159,3 +164,9 @@ const stop = () => {
         confetti.stop()
     }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
 };
+
+
+//#####################################################################################
+
+// Rendert die verschiedenen Quiz kategorien
+
