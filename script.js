@@ -19,7 +19,10 @@ let AUDIO_HAPPY = new Audio('sound/happy.mp3');
 
 
 function init(questionsFilter) {
-    showHideContainer()
+    filterQuestions = [];
+    rightquestions = 0;
+    currentQuestion = 0;
+    showHideContainer();
     let category = questions.filter(questions => questions.category === questionsFilter);
     filterQuestions.push(category);
     document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
@@ -72,6 +75,7 @@ function furtherQuestions() {
     document.getElementById('answer_2').innerHTML = question['answer_2'];
     document.getElementById('answer_3').innerHTML = question['answer_3'];
     document.getElementById('answer_4').innerHTML = question['answer_4'];
+    document.getElementById('imgEndScene').innerHTML = question['img'];
 }
 
 
