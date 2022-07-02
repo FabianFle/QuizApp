@@ -11,7 +11,6 @@ let AUDIO_HAPPY = new Audio('sound/happy.mp3');
 
 // - Antworten bearbeiten (es darf keine merfach antwortmöglichkeiten geben).
 // - Alle HTML Seiten für die verschiedenen Quiz fragen auf eine quiz.html seite packen.
-// - init funktion bearbeiten
 // - Buttons anpassen (Enabel - Disenabel)
 // - 
 
@@ -20,11 +19,13 @@ let AUDIO_HAPPY = new Audio('sound/happy.mp3');
 
 
 function init(questionsFilter) {
+    showHideContainer()
     let category = questions.filter(questions => questions.category === questionsFilter);
     filterQuestions.push(category);
     document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
     showQuestion();
 }
+
 
 function reset() {
     filterQuestions = [];
@@ -33,41 +34,10 @@ function reset() {
     init();
 }
 
-function initCSS() {
-    let questionsFilter = questions.filter(question => question.category === 'CSS');
-    filterQuestions.push(questionsFilter);
-    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion();
+function showHideContainer() {
+    document.getElementById('mainShow').classList.add('d-none');
+    document.getElementById('quizShow').classList.remove('d-none');
 }
-
-function initJS() {
-    let questionsFilter = questions.filter(question => question.category === 'JS');
-    filterQuestions.push(questionsFilter);
-    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion();
-}
-
-function initGalaxy() {
-    let questionsFilter = questions.filter(question => question.category === 'Galaxy');
-    filterQuestions.push(questionsFilter);
-    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion();
-}
-
-function initTierwelt() {
-    let questionsFilter = questions.filter(question => question.category === 'Tierwelt');
-    filterQuestions.push(questionsFilter);
-    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion();
-}
-
-function initTechnik() {
-    let questionsFilter = questions.filter(question => question.category === 'Technik');
-    filterQuestions.push(questionsFilter);
-    document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
-    showQuestion();
-}
-
 
 
 function quizEndSettings() {
@@ -93,7 +63,8 @@ function showQuestion() {
     }
 }
 
-function furtherQuestions(event) {
+
+function furtherQuestions() {
     let question = filterQuestions[0][currentQuestion];
     document.getElementById('questionNummber').innerHTML = currentQuestion + 1;
     document.getElementById('questionText').innerHTML = question['question'];
@@ -104,41 +75,57 @@ function furtherQuestions(event) {
 }
 
 
+function answerButtonTrue() {
+    document.getElementById('answer_1').disabled = false;
+    document.getElementById('answer_2').disabled = false;
+    document.getElementById('answer_3').disabled = false;
+    document.getElementById('answer_4').disabled = false;
+}
+function answerButtonFalse() {
+    document.getElementById('answer_1').disabled = true;
+    document.getElementById('answer_2').disabled = true;
+    document.getElementById('answer_3').disabled = true;
+    document.getElementById('answer_4').disabled = true;
+}
+
+
 function answer(selection) {
     let question = filterQuestions[0][currentQuestion];
     let selectedQuestionNumber = selection.slice(-1);
     let idOfRightAnswer = `answer_${question['right_answer']}`;
 
     if (selectedQuestionNumber == question['right_answer']) {
-        document.getElementById(selection).parentNode.classList.add('bg-success');
+        document.getElementById(selection).classList.add('bg-success');
         AUDIO_SUCCESS.play();
         rightquestions++;
     } else {
-        document.getElementById(selection).parentNode.classList.add('bg-danger');
-        document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success');
+        document.getElementById(selection).classList.add('bg-danger');
+        document.getElementById(idOfRightAnswer).classList.add('bg-success');
         AUDIO_FAIL.play();
     }
     document.getElementById('nextButton').disabled = false;
+    answerButtonFalse();
 }
 
 
 function nextQuestion() {
     currentQuestion++;
     document.getElementById('nextButton').disabled = true;
+    answerButtonTrue();
     resetAnswer();
     showQuestion();
 }
 
 
 function resetAnswer() {
-    document.getElementById('answer_1').parentNode.classList.remove('bg-success');
-    document.getElementById('answer_1').parentNode.classList.remove('bg-danger');
-    document.getElementById('answer_2').parentNode.classList.remove('bg-success');
-    document.getElementById('answer_2').parentNode.classList.remove('bg-danger');
-    document.getElementById('answer_3').parentNode.classList.remove('bg-success');
-    document.getElementById('answer_3').parentNode.classList.remove('bg-danger');
-    document.getElementById('answer_4').parentNode.classList.remove('bg-success');
-    document.getElementById('answer_4').parentNode.classList.remove('bg-danger');
+    document.getElementById('answer_1').classList.remove('bg-success');
+    document.getElementById('answer_1').classList.remove('bg-danger');
+    document.getElementById('answer_2').classList.remove('bg-success');
+    document.getElementById('answer_2').classList.remove('bg-danger');
+    document.getElementById('answer_3').classList.remove('bg-success');
+    document.getElementById('answer_3').classList.remove('bg-danger');
+    document.getElementById('answer_4').classList.remove('bg-success');
+    document.getElementById('answer_4').classList.remove('bg-danger');
 }
 
 
@@ -175,6 +162,3 @@ const stop = () => {
 
 
 //#####################################################################################
-
-// Rendert die verschiedenen Quiz kategorien
-
