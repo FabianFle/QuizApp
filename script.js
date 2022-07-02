@@ -76,7 +76,7 @@ function furtherQuestions() {
     document.getElementById('answer_3').innerHTML = question['answer_3'];
     document.getElementById('answer_4').innerHTML = question['answer_4'];
     document.getElementById('imgEndScene').src = question['img'];
-    document.getElementById('backgroundImg').scr = question['background'];
+    document.getElementById('backgroundImg').src = question['background'];
 }
 
 
