@@ -9,20 +9,28 @@ let AUDIO_HAPPY = new Audio('sound/happy.mp3');
 
 //TO DO
 
-// - Antworten bearbeiten (es darf keine merfach antwortmöglichkeiten geben)
+// - Antworten bearbeiten (es darf keine merfach antwortmöglichkeiten geben).
+// - Alle HTML Seiten für die verschiedenen Quiz fragen auf eine quiz.html seite packen.
+// - init funktion bearbeiten
+// - Buttons anpassen (Enabel - Disenabel)
+// - 
 
 
 //#############################################################################################
 
-function initAdded() {
-    document.body.add('onloade') = "initCSS()";
-}
 
-function initHTML() {
-    let questionsFilter = questions.filter(questions => questions.category === 'HTML');
-    filterQuestions.push(questionsFilter);
+function init(questionsFilter) {
+    let category = questions.filter(questions => questions.category === questionsFilter);
+    filterQuestions.push(category);
     document.getElementById('quizNumber').innerHTML = filterQuestions[0].length;
     showQuestion();
+}
+
+function reset() {
+    filterQuestions = [];
+    rightquestions = 0;
+    currentQuestion = 0;
+    init();
 }
 
 function initCSS() {
