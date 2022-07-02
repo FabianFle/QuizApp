@@ -8,7 +8,8 @@ let questions = [
         "answer_3": "Tim Berners-Lee",
         "answer_4": "Justin Bierber",
         "right_answer": 3,
-        "img": "img/HTML.png"
+        "img": "img/HTML.png",
+        "background": "img/HTMLwallpaper.png"
     },
     {
         "category": "HTML",
@@ -18,8 +19,8 @@ let questions = [
         "answer_3": "<.href src='...' alt='...'>",
         "answer_4": "<.img src='...' alt='...''>",
         "right_answer": 4,
-        "img": "img/HTML.png"
-
+        "img": "img/HTML.png",
+        "background": "img/HTMLwallpaper.png"
     },
     {
         "category": "HTML",
@@ -29,8 +30,8 @@ let questions = [
         "answer_3": "< u >",
         "answer_4": "< i >",
         "right_answer": 4,
-        "img": "img/HTML.png"
-
+        "img": "img/HTML.png",
+        "background": "img/HTMLwallpaper.png"
     },
     {
         "category": "HTML",
@@ -40,8 +41,8 @@ let questions = [
         "answer_3": "HTML ist eine Programmiersprache",
         "answer_4": "HTML ist für Webseiten",
         "right_answer": 3,
-        "img": "img/HTML.png"
-
+        "img": "img/HTML.png",
+        "background": "img/HTMLwallpaper.png"
     },
     {
         "category": "HTML",
@@ -51,8 +52,8 @@ let questions = [
         "answer_3": "<.div></div>",
         "answer_4": "<.h1></h1>",
         "right_answer": 1,
-        "img": "img/HTML.png"
-
+        "img": "img/HTML.png",
+        "background": "img/HTMLwallpaper.png"
     },
     {
         "category": "HTML",
@@ -62,8 +63,8 @@ let questions = [
         "answer_3": "3",
         "answer_4": "4",
         "right_answer": 2,
-        "img": "img/HTML.png"
-
+        "img": "img/HTML.png",
+        "background": "img/HTMLwallpaper.png"
     },
 
 //#####################################################################################################
@@ -77,8 +78,8 @@ let questions = [
         "answer_3": "Eine JS funktion",
         "answer_4": " Weiß ich nicht",
         "right_answer": 2,
-        "img": "img/CSS.png"
-
+        "img": "img/CSS.png",
+        "background": "img/CSSwallpaper.png"
     },
     {
         "category": "CSS",
@@ -88,8 +89,8 @@ let questions = [
         "answer_3": "// das ist ein Kommentar",
         "answer_4": "<.!-- das ist ein Kommentar-->",
         "right_answer": 1,
-        "img": "img/CSS.png"
-
+        "img": "img/CSS.png",
+        "background": "img/CSSwallpaper.png"
     },
     {
         "category": "CSS",
@@ -99,8 +100,8 @@ let questions = [
         "answer_3": "color:",
         "answer_4": "textcolor:",
         "right_answer": 3,
-        "img": "img/CSS.png"
-
+        "img": "img/CSS.png",
+        "background": "img/CSSwallpaper.png"
     },
     {
         "category": "CSS",
@@ -110,8 +111,8 @@ let questions = [
         "answer_3": "Angaben, die verschiedene Inhalte der Website miteinander verbinden",
         "answer_4": "Struktur der Website",
         "right_answer": 2,
-        "img": "img/CSS.png"
-
+        "img": "img/CSS.png",
+        "background": "img/CSSwallpaper.png"
     },
     {
         "category": "CSS",
@@ -121,8 +122,8 @@ let questions = [
         "answer_3": "cursor",
         "answer_4": "onload",
         "right_answer": 4,
-        "img": "img/CSS.png"
-
+        "img": "img/CSS.png",
+        "background": "img/CSSwallpaper.png"
     },
     {
         "category": "CSS",
@@ -132,8 +133,8 @@ let questions = [
         "answer_3": "<.style></style>",
         "answer_4": "<.body></body>",
         "right_answer": 3,
-        "img": "img/CSS.png"
-
+        "img": "img/CSS.png",
+        "background": "img/CSSwallpaper.png"
     },
 
 //#####################################################################################################
@@ -147,8 +148,8 @@ let questions = [
         "answer_3": "Brendan Eich",
         "answer_4": "Chuck Norris",
         "right_answer": 3,
-        "img": "img/JS.png"
-
+        "img": "img/JS.png",
+        "background": "img/JSwallpaper.png"
     },
     {
         "category": "JS",
@@ -158,8 +159,8 @@ let questions = [
         "answer_3": "Desinsprache",
         "answer_4": "CMD Sprache",
         "right_answer": 2,
-        "img": "img/JS.png"
-
+        "img": "img/JS.png",
+        "background": "img/JSwallpaper.png"
     },
     {
         "category": "JS",
@@ -169,8 +170,8 @@ let questions = [
         "answer_3": "<.script></script>",
         "answer_4": "<.body></body>",
         "right_answer": 3,
-        "img": "img/JS.png"
-
+        "img": "img/JS.png",
+        "background": "img/JSwallpaper.png"
     },
     {
         "category": "JS",
@@ -180,8 +181,8 @@ let questions = [
         "answer_3": "String",
         "answer_4": "For-Schleife",
         "right_answer": 4,
-        "img": "img/JS.png"
-
+        "img": "img/JS.png",
+        "background": "img/JSwallpaper.png"
     },
     {
         "category": "JS",
@@ -191,8 +192,8 @@ let questions = [
         "answer_3": "TypeScript",
         "answer_4": "Seit anfang an heißt es JavaScript",
         "right_answer": 1,
-        "img": "img/JS.png"
-
+        "img": "img/JS.png",
+        "background": "img/JSwallpaper.png"
     },
     {
         "category": "JS",
@@ -202,8 +203,8 @@ let questions = [
         "answer_3": "document.getElement('p').innerHTML = 'Hello World!';",
         "answer_4": "document.getElementById('demo').innerHTML = 'Hello World!';",
         "right_answer": 4,
-        "img": "img/JS.png"
-
+        "img": "img/JS.png",
+        "background": "img/JSwallpaper.png"
     },
 
 //#####################################################################################################
@@ -217,8 +218,8 @@ let questions = [
         "answer_3": "Sofort",
         "answer_4": "20 Minuten",
         "right_answer": 2,
-        "img": "img/Galaxy.png"
-
+        "img": "img/Galaxy.png",
+        "background": "img/Galaxywallpaper.png"
     },
     {
         "category": "Galaxy",
@@ -228,8 +229,8 @@ let questions = [
         "answer_3": "10",
         "answer_4": "12",
         "right_answer": 2,
-        "img": "img/Galaxy.png"
-
+        "img": "img/Galaxy.png",
+        "background": "img/Galaxywallpaper.png"
     },
     {
         "category": "Galaxy",
@@ -239,8 +240,8 @@ let questions = [
         "answer_3": "6.334 km",
         "answer_4": "6.371 km",
         "right_answer": 4,
-        "img": "img/Galaxy.png"
-
+        "img": "img/Galaxy.png",
+        "background": "img/Galaxywallpaper.png"
     },
     {
         "category": "Galaxy",
@@ -250,8 +251,8 @@ let questions = [
         "answer_3": "5",
         "answer_4": "6",
         "right_answer": 1,
-        "img": "img/Galaxy.png"
-
+        "img": "img/Galaxy.png",
+        "background": "img/Galaxywallpaper.png"
     },
     {
         "category": "Galaxy",
@@ -261,8 +262,8 @@ let questions = [
         "answer_3": "Uranus",
         "answer_4": "Neptun",
         "right_answer": 2,
-        "img": "img/Galaxy.png"
-
+        "img": "img/Galaxy.png",
+        "background": "img/Galaxywallpaper.png"
     },
     {
         "category": "Galaxy",
@@ -272,8 +273,8 @@ let questions = [
         "answer_3": "Mars",
         "answer_4": "Saturn",
         "right_answer": 4,
-        "img": "img/Galaxy.png"
-
+        "img": "img/Galaxy.png",
+        "background": "img/Galaxywallpaper.png"
     },
     {
         "category": "Galaxy",
@@ -283,8 +284,8 @@ let questions = [
         "answer_3": "199.994 km pro Sekunde",
         "answer_4": "188.759.954 km pro Minute",
         "right_answer": 1,
-        "img": "img/Galaxy.png"
-
+        "img": "img/Galaxy.png",
+        "background": "img/Galaxywallpaper.png"
     },
     {
         "category": "Galaxy",
@@ -294,8 +295,8 @@ let questions = [
         "answer_3": "Uranus",
         "answer_4": "Pluto",
         "right_answer": 4,
-        "img": "img/Galaxy.png"
-
+        "img": "img/Galaxy.png",
+        "background": "img/Galaxywallpaper.png"
     },
 
 //#####################################################################################################
@@ -309,8 +310,8 @@ let questions = [
         "answer_3": "Weißer Hai",
         "answer_4": "Orkar",
         "right_answer": 1,
-        "img": "img/Tierwelt.png"
-
+        "img": "img/Tierwelt.png",
+        "background": "img/Tierweltwallpaper.png"
     },
     {
         "category": "Tierwelt",
@@ -320,8 +321,8 @@ let questions = [
         "answer_3": "Bis zu 95.000 Kilogramm",
         "answer_4": "Bis zu 200.000 Kilogramm",
         "right_answer": 4,
-        "img": "img/Tierwelt.png"
-
+        "img": "img/Tierwelt.png",
+        "background": "img/Tierweltwallpaper.png"
     },
     {
         "category": "Tierwelt",
@@ -331,8 +332,8 @@ let questions = [
         "answer_3": "Hund",
         "answer_4": "Delfin",
         "right_answer": 3,
-        "img": "img/Tierwelt.png"
-
+        "img": "img/Tierwelt.png",
+        "background": "img/Tierweltwallpaper.png"
     },
     {
         "category": "Tierwelt",
@@ -342,8 +343,8 @@ let questions = [
         "answer_3": "Zur Familie der Bären",
         "answer_4": "Zur Familie der Mäuse",
         "right_answer": 2,
-        "img": "img/Tierwelt.png"
-
+        "img": "img/Tierwelt.png",
+        "background": "img/Tierweltwallpaper.png"
     },
     {
         "category": "Tierwelt",
@@ -353,8 +354,8 @@ let questions = [
         "answer_3": "Männliche: 6-7 Meter / Weibliche: 3-4 Meter",
         "answer_4": "Männliche: 4-5 Meter / Weibliche: 5-6 Meter",
         "right_answer": 2,
-        "img": "img/Tierwelt.png"
-
+        "img": "img/Tierwelt.png",
+        "background": "img/Tierweltwallpaper.png"
     },
     {
         "category": "Tierwelt",
@@ -364,8 +365,8 @@ let questions = [
         "answer_3": "2",
         "answer_4": "9",
         "right_answer": 4,
-        "img": "img/Tierwelt.png"
-
+        "img": "img/Tierwelt.png",
+        "background": "img/Tierweltwallpaper.png"
     },
     {
         "category": "Tierwelt",
@@ -375,8 +376,8 @@ let questions = [
         "answer_3": "Sie Pfeifen",
         "answer_4": "Die drehen sich im Kreis",
         "right_answer": 3,
-        "img": "img/Tierwelt.png"
-
+        "img": "img/Tierwelt.png",
+        "background": "img/Tierweltwallpaper.png"
     },
     {
         "category": "Tierwelt",
@@ -386,8 +387,8 @@ let questions = [
         "answer_3": "15 Stunde",
         "answer_4": "20 Stunde",
         "right_answer": 4,
-        "img": "img/Tierwelt.png"
-
+        "img": "img/Tierwelt.png",
+        "background": "img/Tierweltwallpaper.png"
     },
 
 //#####################################################################################################
@@ -401,8 +402,8 @@ let questions = [
         "answer_3": "Gigabyte - byte - Megabyte - Kilobyte - Terabyte - Petabyte",
         "answer_4": "byte - Kilobyte - Gigabyte - Megabyte - Terabyte - Petabyte",
         "right_answer": 1,
-        "img": "img/Technik.png"
-
+        "img": "img/Technik.png",
+        "background": "img/Technikwallpaper.png"
     },
     {
         "category": "Technik",
@@ -412,8 +413,8 @@ let questions = [
         "answer_3": "RAM",
         "answer_4": "Mainboard",
         "right_answer": 4,
-        "img": "img/Technik.png"
-
+        "img": "img/Technik.png",
+        "background": "img/Technikwallpaper.png"
     },
     {
         "category": "Technik",
@@ -423,8 +424,8 @@ let questions = [
         "answer_3": "Central Processing Unit",
         "answer_4": "County Pushchair Unveiling",
         "right_answer": 3,
-        "img": "img/Technik.png"
-
+        "img": "img/Technik.png",
+        "background": "img/Technikwallpaper.png"
     },
     {
         "category": "Technik",
@@ -434,8 +435,8 @@ let questions = [
         "answer_3": "GTX 1000",
         "answer_4": "RTX 2000",
         "right_answer": 4,
-        "img": "img/Technik.png"
-
+        "img": "img/Technik.png",
+        "background": "img/Technikwallpaper.png"
     },
     {
         "category": "Technik",
@@ -445,8 +446,8 @@ let questions = [
         "answer_3": "150 Megabyte",
         "answer_4": "125 Megabyte",
         "right_answer": 4,
-        "img": "img/Technik.png"
-
+        "img": "img/Technik.png",
+        "background": "img/Technikwallpaper.png"
     },
     {
         "category": "Technik",
@@ -456,8 +457,8 @@ let questions = [
         "answer_3": "Die Zugriffszeit auf den RAM",
         "answer_4": "Die Bildwiederholungsfrequenz",
         "right_answer": 1,
-        "img": "img/Technik.png"
-
+        "img": "img/Technik.png",
+        "background": "img/Technikwallpaper.png"
     },
     {
         "category": "Technik",
@@ -467,8 +468,8 @@ let questions = [
         "answer_3": "ROM",
         "answer_4": "Prozessor",
         "right_answer": 2,
-        "img": "img/Technik.png"
-
+        "img": "img/Technik.png",
+        "background": "img/Technikwallpaper.png"
     },
     {
         "category": "Technik",
@@ -478,7 +479,7 @@ let questions = [
         "answer_3": "Ein Siegel für 'Silent' -PCs",
         "answer_4": "Eine Router-Einstellung",
         "right_answer": 2,
-        "img": "img/Technik.png"
-
+        "img": "img/Technik.png",
+        "background": "img/Technikwallpaper.png"
     }
 ];

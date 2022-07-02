@@ -21,6 +21,10 @@
         height: 250px;
     }
     
+    .backgroundImg {
+        display: none;
+    }
+    
     .quizCard {
         border-radius: 0;
         position: absolute !important;
