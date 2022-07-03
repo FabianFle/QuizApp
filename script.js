@@ -175,6 +175,21 @@ function infoShow() {
 function closeInfoShow() {
     document.getElementById('showInfos').classList.add('d-none');
     document.getElementById('menuDivID').classList.remove('d-none');
-    document.getElementById('quizShow').classList.remove('d-none');
     document.getElementById('mainShow').classList.remove('d-none');
+}
+
+function audioRichtig() {
+    AUDIO_SUCCESS.play();
+}
+
+function audioFalsch() {
+    AUDIO_FAIL.play();
+}
+
+function audioEnde() {
+    AUDIO_HAPPY.play();
+}
+
+function infoAddedQuiz() {
+    document.getElementById('infoAddedQuiz').classList.remove('d-none');
 }

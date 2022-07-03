@@ -245,6 +245,10 @@ p {
     color: black !important;
 }
 
+.infoAndCloseButton {
+    margin-top: 10px;
+}
+
 .headerDivShowInfos {
     position: sticky;
     top: 0;
@@ -294,6 +298,13 @@ p {
     margin: 5px;
 }
 
+.infoAddedQuiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
 .ditance5 {
     margin: 5px;
     width: 200px;
@@ -303,11 +314,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 50px;
     border-radius: 8px;
 }
 
 .buttonConfetti {
+    margin: 20px;
     font-size: 20px;
     font-weight: 800;
     cursor: pointer;
@@ -319,7 +332,7 @@ p {
 }
 
 .buttonConfetti:hover {
-    background-color: rgb(0, 139, 139);
+    background-color: rgb(47, 194, 243);
 }
 
 
@@ -354,4 +367,32 @@ p {
     height: 200px;
     width: 250px;
     margin: 5px;
+}
+
+.audioSpan {
+    font-size: 40px;
+}
+
+.audioButton {
+    border-radius: 4px;
+    margin: 5px;
+    background-color: lightblue;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+
+.audioButton:hover {
+    background-color: rgb(47, 194, 243);
+}
+
+.audiDiv {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

@@ -1,21 +1,66 @@
-@media (max-width: 0px) {
-    .headerDivShowInfos {
-        display: none;
+@media (max-width: 810px) {
+    .addedQuiz {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .distance50 {
+        margin: 20px;
     }
 
     .h1ResponsivInfo {
         font-size: 40px;
         font-weight: 900;
     }
-}
 
-@media (min-width: 1271px) {
-    .infoTextDiv {
-        display: none;
+    .showH2 {
+        font-size: 40px;
+    }
+
+    .addQuestionsH2 {
+        font-size: 30px;
+    }
+
+    .showH1 {
+        font-size: 30px;
     }
 }
 
+@media (max-width: 500px) {
 
+    .showH2 {
+        font-size: 25px;
+    }
+
+    .showImgSettings {
+        width: 175px;
+        height: 175px;
+    }
+
+    .infoAndCloseButton {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .closeButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        width: 100px;
+        height: 30px;
+        margin-bottom: 5px;
+        margin: 0;
+    }
+
+    .audioSpan {
+        font-size: 25px;
+    }
+}
 
 @media (max-width: 950px) {
 

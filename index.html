@@ -149,7 +149,7 @@
                         <button class="categoryButton" title="Kategorie Auswählen">Galaxy</button>
                         <button class="categoryButton" title="Kategorie Auswählen">Tierwelt</button>
                         <button class="categoryButton" title="Kategorie Auswählen">Technik</button>
-                        <button class="saveButton">Speichern</button>
+                        <button class="saveButton" onclick="infoAddedQuiz()">Speichern</button>
                     </div>
                     <div class="flexColume distance50">
                         <input class="ditance5" type="text" placeholder="Frage stellung">
@@ -160,8 +160,15 @@
                         <input class="ditance5" type="number" placeholder=" Welche Antwort ist die Richtige?">
                     </div>
                 </div>
+                <span id="infoAddedQuiz" class="infoAddedQuiz d-none">Das hinzufügen der Quiz fragen ist noch in Bearbeitung!</span>
                 <div class="confettiButton">
                     <button onclick="start(), stop()" class="buttonConfetti">Confetti Test</button>
+                    <div class="audiDiv">
+                        <span class="audioSpan">Audios abspielen</span>
+                        <button class="audioButton" onclick="audioRichtig()">Richtig</button>
+                        <button class="audioButton" onclick="audioFalsch()">Falsch</button>
+                        <button class="audioButton" onclick="audioEnde()">Ende</button>
+                    </div>
                 </div>
                 <div>
                     <div class="borderSettings">
