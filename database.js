@@ -198,10 +198,10 @@ let questions = [
     {
         "category": "JS",
         "question": "Wie lautet die korrekte JavaScript-Syntax, um den Inhalt des unten stehenden HTML-Elements zu ändern? <br> <.p id='demo'>Dies ist eine Demonstration.</p> <br> Hinweis: Die doppelten Anführungszeichen wurden durch (') ersetzt.",
-        "answer_1": "document.getElementByName('p').innerHTML = 'Hello World!';",
+        "answer_1": "document.getElementByName ('p').innerHTML = 'Hello World!';",
         "answer_2": "#demo.innerHTML = 'Hello World!';",
-        "answer_3": "document.getElement('p').innerHTML = 'Hello World!';",
-        "answer_4": "document.getElementById('demo').innerHTML = 'Hello World!';",
+        "answer_3": "document.getElement ('p').innerHTML = 'Hello World!';",
+        "answer_4": "document.getElementById ('demo').innerHTML = 'Hello World!';",
         "right_answer": 4,
         "img": "img/JS.png",
         "background": "img/JSwallpaper.png"

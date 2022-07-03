@@ -16,9 +16,6 @@ let AUDIO_HAPPY = new Audio('sound/happy.mp3');
 
 
 function init(questionsFilter) {
-    filterQuestions = [];
-    rightquestions = 0;
-    currentQuestion = 0;
     showHideContainer();
     let category = questions.filter(questions => questions.category === questionsFilter);
     filterQuestions.push(category);
