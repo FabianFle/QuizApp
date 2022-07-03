@@ -28,7 +28,8 @@ function reset() {
     filterQuestions = [];
     rightquestions = 0;
     currentQuestion = 0;
-    init();
+    resetAnswer();
+    furtherQuestions();
 }
 
 function showHideContainer() {
@@ -146,7 +147,7 @@ function openMenu() {
 // Confetti Start and Stop
 
 const start = () => {
-    setTimeout(function() {
+    setTimeout(function () {
         confetti.start()
     }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
 };
@@ -154,7 +155,7 @@ const start = () => {
 //  Stop
 
 const stop = () => {
-    setTimeout(function() {
+    setTimeout(function () {
         confetti.stop()
     }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
 };
@@ -189,4 +190,35 @@ function audioEnde() {
 
 function infoAddedQuiz() {
     document.getElementById('infoAddedQuiz').classList.remove('d-none');
+}
+
+
+//#####################################################################################
+
+
+function checkButton() {
+    if (document.getElementById('nextButton').disabled === true) {
+        runWiggle();
+    } else {
+        nextQuestion();
+    }
+}
+
+function runWiggle() {
+    startWiggle();
+    setTimeout(() => {
+        endWiggle();
+    }, 300);
+}
+
+function startWiggle() {
+    document.getElementById('nextButton').classList.add('wiggle');
+    document.getElementById('wiggleButton').classList.add('wiggle');
+
+}
+
+function endWiggle() {
+    document.getElementById('nextButton').classList.remove('wiggle');
+    document.getElementById('wiggleButton').classList.remove('wiggle');
+
 }

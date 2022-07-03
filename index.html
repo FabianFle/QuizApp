@@ -13,6 +13,7 @@
     <link rel="icon" type="image/x-icon" href="img/quiz.ico.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="fonts.css">
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -160,9 +161,11 @@
                         <input class="ditance5" type="number" placeholder=" Welche Antwort ist die Richtige?">
                     </div>
                 </div>
-                <span id="infoAddedQuiz" class="infoAddedQuiz d-none">Das hinzufügen der Quiz fragen ist noch in Bearbeitung!</span>
+                <span id="infoAddedQuiz" class="infoAddedQuiz d-none">Das hinzufügen der Quiz fragen ist noch in
+                    Bearbeitung!</span>
                 <div class="confettiButton">
                     <button onclick="start(), stop()" class="buttonConfetti">Confetti Test</button>
+                    <button onclick="runWiggle()" id="wiggleButton" class="buttonConfetti">Wiggle Test</button>
                     <div class="audiDiv">
                         <span class="audioSpan">Audios abspielen</span>
                         <button class="audioButton" onclick="audioRichtig()">Richtig</button>
@@ -251,7 +254,7 @@
                         </a>
 
                         <div class="backToHome">
-                            <button onclick="reset()" type="button" class="btn btn-outline-primary">Noch einmal
+                            <button onclick="init(questionsFilter)" type="button" class="btn btn-outline-primary">Noch einmal
                                 spielen</button>
                         </div>
                     </div>
@@ -282,10 +285,11 @@
                                 <b id="questionNummber">1</b> von <b id="quizNumber">1</b> Fragen
                             </span>
 
-
-                            <button type="button" class="btn btn-outline-primary" id="nextButton" disabled
-                                onclick="nextQuestion()">Nächste Frage</button>
-
+                            <div onclick="checkButton()">
+                                <button type="button" class="btn btn-outline-primary" id="nextButton" disabled>
+                                    Nächste Frage
+                                </button>
+                            </div>
 
                         </div>
                     </div>
