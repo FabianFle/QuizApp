@@ -1,3 +1,22 @@
+@media (max-width: 0px) {
+    .headerDivShowInfos {
+        display: none;
+    }
+
+    .h1ResponsivInfo {
+        font-size: 40px;
+        font-weight: 900;
+    }
+}
+
+@media (min-width: 1271px) {
+    .infoTextDiv {
+        display: none;
+    }
+}
+
+
+
 @media (max-width: 950px) {
 
     body {
@@ -78,6 +97,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .showInfoDiv {
+        margin: 0;
     }
 
     .menuImg:hover {

@@ -9,10 +9,7 @@ let AUDIO_HAPPY = new Audio('sound/happy.mp3');
 
 //TO DO
 
-// - Antworten bearbeiten (es darf keine merfach antwortmöglichkeiten geben).
-// - Alle HTML Seiten für die verschiedenen Quiz fragen auf eine quiz.html seite packen.
-// - Buttons anpassen (Enabel - Disenabel)
-// - 
+// - Reset function funktioniert noch nicht
 
 
 //#############################################################################################
@@ -167,3 +164,17 @@ const stop = () => {
 
 
 //#####################################################################################
+
+function infoShow() {
+    document.getElementById('showInfos').classList.remove('d-none');
+    document.getElementById('menuDivID').classList.add('d-none');
+    document.getElementById('quizShow').classList.add('d-none');
+    document.getElementById('mainShow').classList.add('d-none');
+}
+
+function closeInfoShow() {
+    document.getElementById('showInfos').classList.add('d-none');
+    document.getElementById('menuDivID').classList.remove('d-none');
+    document.getElementById('quizShow').classList.remove('d-none');
+    document.getElementById('mainShow').classList.remove('d-none');
+}
