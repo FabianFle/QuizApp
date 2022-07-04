@@ -9,7 +9,7 @@ let AUDIO_HAPPY = new Audio('sound/happy.mp3');
 
 //TO DO
 
-// - Reset function funktioniert noch nicht
+// - "resetGame" function funktioniert noch nicht
 
 
 //#############################################################################################
@@ -23,11 +23,16 @@ function init(questionsFilter) {
     showQuestion();
 }
 
-// function reset() {
-//     rightquestions = 0;
-//     currentQuestion = 0;
-//     let filterQuestions = [];
-//     showQuestion();
+function reset() {
+    rightquestions = 0;
+    currentQuestion = 0;
+    filterQuestions = [];
+    resetAnswer();
+    answerButtonTrue();
+}
+
+// function resetGame(){
+
 // }
 
 function showHideContainer() {
