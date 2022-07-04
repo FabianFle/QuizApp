@@ -23,14 +23,12 @@ function init(questionsFilter) {
     showQuestion();
 }
 
-
-function reset() {
-    filterQuestions = [];
-    rightquestions = 0;
-    currentQuestion = 0;
-    resetAnswer();
-    furtherQuestions();
-}
+// function reset() {
+//     rightquestions = 0;
+//     currentQuestion = 0;
+//     let filterQuestions = [];
+//     showQuestion();
+// }
 
 function showHideContainer() {
     document.getElementById('mainShow').classList.add('d-none');
